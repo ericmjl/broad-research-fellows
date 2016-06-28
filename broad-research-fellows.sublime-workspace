@@ -71,10 +71,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 69.0,
+		"last_filter": "academic",
 		"selected_items":
 		[
+			[
+				"academic",
+				"Set Syntax: AcademicMarkdown"
+			],
+			[
+				"pandoc",
+				"Pandoc"
+			],
 			[
 				"markdown gfm",
 				"MarkdownEditing: Gather Missing Footnotes"
@@ -86,14 +94,6 @@
 			[
 				"markdown",
 				"Set Syntax: Markdown Extended"
-			],
-			[
-				"academic",
-				"Set Syntax: AcademicMarkdown"
-			],
-			[
-				"pandoc",
-				"Pandoc"
 			],
 			[
 				"python",
@@ -332,7 +332,7 @@
 				"Sync Settings: Download"
 			]
 		],
-		"width": 476.0
+		"width": 629.0
 	},
 	"console":
 	{
@@ -360,6 +360,7 @@
 	],
 	"file_history":
 	[
+		"/Users/ericmjl/Documents/github/writing/broad-research-fellows/01-research-statement.md",
 		"/Users/ericmjl/Documents/github/writing/rowland-jr-fellows/01-research-statement.md",
 		"/Users/ericmjl/Documents/github/writing/rowland-jr-fellows/02-cv.md",
 		"/Users/ericmjl/Documents/github/writing/rowland-jr-fellows/02-cv.pdf",
@@ -486,12 +487,11 @@
 		"/Users/ericmjl/website/test-new-personal-site/ericmjl.lektorproject",
 		"/Users/ericmjl/Documents/github/cv/cv.md",
 		"/Users/ericmjl/website/test-new-personal-site/templates/layout.html",
-		"/private/var/folders/4d/5h2mymgs27q1sk0828h4wyh00000gn/T/com.soulmen.ulysses3/QuickExport/Dividing People into Small Groups with Python.md",
-		"/Users/ericmjl/Documents/github/small-group/smallgroup.py"
+		"/private/var/folders/4d/5h2mymgs27q1sk0828h4wyh00000gn/T/com.soulmen.ulysses3/QuickExport/Dividing People into Small Groups with Python.md"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -505,6 +505,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"%%",
 			"proproG",
 			"row[1]['person2']",
 			"row[1]['person1']",
@@ -631,8 +632,7 @@
 			"<ol>",
 			"<li>",
 			"--wrap",
-			"--wrap=none",
-			"<h3>"
+			"--wrap=none"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -739,6 +739,8 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"fss_on_distraction_free": false,
+		"fss_on_full_screen": false
 	},
 	"show_minimap": true,
 	"show_open_files": false,
