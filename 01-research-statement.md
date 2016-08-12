@@ -1,11 +1,15 @@
-# Broad Fellows Application
+---
+title: Broad Fellows Application
+author: Eric J. Ma
+affiliation: MIT
+---
 <!--
 Comments by Bill:
-- Be sure to state what kind of institutional support can be leverage? 
-- Can add some “logistics overview” - what kind of people, what kind of equipment? 
+- Be sure to state what kind of institutional support can be leverage?
+- Can add some “logistics overview” - what kind of people, what kind of equipment?
 - On the experimental side, can add a bit more detail on the format of the experiments.
 - Explain why the Broad is *the* best place to do this work.
-- Would this be *in vitro* or *in-cell* models? 
+- Would this be *in vitro* or *in-cell* models?
 - What has been done, what we need to do, how prepared are we for this?
 - Ask Paul Blainey & Pardis for a meeting.
 -->
@@ -16,7 +20,7 @@ Comments by Bill:
 
 **Long-term research goals:** My long-term research interests are to build the necessary experimental and computational components required to make real-time pathogen surveillance, prevention and treatment a *rationally predictive endeavour*. The core problems I have identified are: (1) the paucity of biochemical phenotype data that inform mechanistic knowledge of risk and pathogenesis, and (2) interpretable models to map from sequence data to quantitative measures of pathogen risk.
 
-**Research background:** My research background, which has included both experimental and computational components, has provided me with an excellent set of tools with which to tackle this problem. My experimental training was in synthetic biology, where I was a member of the 2009 UBC iGEM team, and an advisor to the 2011 UCSF iGEM teams. I later switched into computational science under Prof. Jonathan A. Runstadler. My first area of focus has been on influenza disease ecology. Together with my colleagues in the Runstadler lab, we have investigated the role of reticulate evolution in influenza virus host switching (#cite: PNAS, EcoLetters), where I have won poster presentation awards (Broad Retreat, CEHS). The second (and more recent) focus is on the prediction of viral phenotype from genotype. The latter is where my current efforts are focused, in collaboration with the Harvard Intelligent & Probabilistic Systems group. Apart from these two main areas of focus, I have also collaborated with colleagues in the use of Bayesian phylogenetic methods to study influenza movement and reassortment in wild animals (#cite: PLoS Pathogens, Virus Genes), and developing analysis methods for viral phenotype data (#cite: SciRep, IGE papers). In collaboration with experimentally-oriented colleagues, we are currently building the experimental infrastructure to systematically characterize the biochemical activities of viral protein variants.
+**Research background:** My research background, which has included both experimental and computational components, has provided me with an excellent set of tools with which to tackle this problem. My experimental training was in synthetic biology, where I spearheaded formation of the 2009 UBC iGEM team, building an analog threshold sensor for biological systems. I also served as an advisor to the 2011 UCSF iGEM teams. I later switched into computational science under Prof. Jonathan A. Runstadler. My first area of focus has been on influenza disease ecology. Together with my colleagues in the Runstadler lab, we have investigated the role of reticulate evolution in influenza virus host switching [@Ma:2016ht; @Hill:2016dh], where I have won poster presentation awards (Broad Retreat, CEHS). The second (and more recent) focus is on the prediction of viral phenotype from genotype. The latter is where my current efforts are focused, in collaboration with the Harvard Intelligent & Probabilistic Systems group. Apart from these two main areas of focus, I have also collaborated with colleagues in the use of Bayesian phylogenetic methods to study influenza movement and reassortment in wild animals [@Bahl:2016efa; @Bui:2015bja], and developing analysis methods for viral phenotype data [@Hussein:2016cj; @Hussein:2016dc]. In collaboration with experimentally-oriented colleagues, I am currently piloting the experimental infrastructure to systematically characterize the biochemical activities of viral protein variants.
 
 **Broad Fellows vision:** As a Broad Fellow, I envision assembling a team to build a real-time risk profiling dashboard for influenza. Using real-time sequencing data as an input, I envision this dashboard as being powered by machine learning, backed by experimental data, and delivering rapid and interpretable insights into the biology, pathology and epidemiology of emerging infections. With influenza as the proof of concept, the longer-term vision is for this to be modularity extensible to other pathogens as well. In pursuit of this goal, I plan to develop 2 main project thrusts, which I will elaborate on below.
 
@@ -28,10 +32,10 @@ Comments by Bill:
 2. The lack of a catalogue of safe, scalable, and standardized phenotyping assays to rapidly phenotype these proteins.
 3. The lack of the concept of “signatures” of riskiness.
 
-Proteins are the arbiters of viral function. Hence, I believe that a pathogen’s measure of “riskiness” is composed of its proteins’ biochemical activities. In this paradigm, the rational approach requires making systematic and properly standardized measurements, on epidemiologically relevant biochemcial phenotypes, for libraries of protein variants. 
+Proteins are the arbiters of viral function. Hence, I believe that a pathogen’s measure of “riskiness” is composed of its proteins’ biochemical activities. In this paradigm, the rational approach requires making systematic and properly standardized measurements, on epidemiologically relevant biochemcial phenotypes, for libraries of protein variants.
 
-<!-- Emphasize how it can be catalytic. Also should be good to show that we have received funding. 
-%% Talk with Paul Blainey about it. 
+<!-- Emphasize how it can be catalytic. Also should be good to show that we have received funding.
+%% Talk with Paul Blainey about it.
  -->
 
 **Proposed work:** We will begin with phenotyping assays that are already amenable to systematic testing but have not yet been executed at scale. One low-hanging fruit is the polymerase minigenome assay, in which the influenza polymerase activity is read out using a luciferase reporter, and is amenable to high throughput liquid handling. In order to generate protein variant libraries, we will use a two-pronged approach. To learn from historical data, we will create a rational library of existing protein variants in the Influenza Research Database. To pre-emptively explore genotypic space, we will generate random mutants from contemporary protein variants that have been sampled in the past year.
@@ -50,7 +54,7 @@ The data that we will generate as a team will have advantages that stand in cont
 
 <!-- The main focus here is on predictive use of the data. May want to change the title of this section to focus on prediction, tying it with the -->
 
-Machine learning offers us the capacity to learn the complex relationship between genotype and phenotype. Our second project thrust will take advantage of recent developments in deep learning to bring interpretability and learning capacity to machine learning on protein phenotypes.
+Machine learning offers us the capacity to learn the complex mapping from genotype to phenotype. Our second project thrust will take advantage of recent developments in deep learning to bring interpretability and learning capacity to machine learning on protein phenotypes.
 
 **Core problem:** Over the past decade, machine learning has been applied to protein sequences (#cite) and structures (#cite) to predict properties such as drug resistance, but the state-of-the-art models suffer from the trade-off between learning capacity (model complexity) and interpretability, the latter being the biggest limiting factor in deployability in clinical settings. An additional limitation is that they are unable to accept variable-length sequences as input, which poses a problem for fast-evolving viral proteins that can undergo insertions and deletions, apart from substitutions, as part of their evolutionary trajectory.
 
@@ -58,11 +62,11 @@ Recent progress in deep learning has led to the development of convolutional dee
 
 **Proposed work:** Protein structures are a natural extension of chemical graphs, where nodes are amino acids and edges are biochemical interactions between them. In collaboration with David Duvenaud of the Harvard Intelligent and Probabilistic Systems group, I am currently developing software that converts protein structures into a graph representation and a software package that enables general purpose deep learning on graphs. While both are currently unpublished work, I am actively working on these two pieces of software, with code publicly available on GitHub (#link), with considerable performance progress being made.
 
-We will begin with maturing the graph deep learning software for use with our influenza replication phenotyping data; preliminary work on predicting HIV-1 protease drug resistance has shown great promise. The goal here is to identify the deep convolutional network architectures that can most accurately predict quantitative replication phenotype from modelled structure. We will leverage the computational resources that we have access to, including the Broad and BioMicroCenter (MIT) compute clusters, as well as on-demand commercially-available cloud compute capacity (where necessary).
+I will begin with maturing the graph deep learning software for use with our influenza replication phenotyping data; preliminary work on predicting HIV-1 protease drug resistance has shown great promise. The goal here is to identify the deep convolutional network architectures that can most accurately predict quantitative replication phenotype from modelled structure. I will leverage the computational resources that I have access to, including the Broad and BioMicroCenter (MIT) compute clusters, as well as on-demand commercially-available cloud compute capacity (where necessary).
 
-A medium-term goal will be to pair the computational efforts with the diverse experimental data generated to train models for each protein's set of measures phenotypes. For single proteins/complexes with multiple measured phenotypes, we will experiment with multi-task learning, in which we simultaneously learn multiple measured phenotypes for the same sequence. 
+A medium-term goal will be to pair the computational efforts with the diverse experimental data generated to train models for each protein's set of measures phenotypes. For single proteins/complexes with multiple measured phenotypes, I will experiment with multi-task learning, simultaneously learn multiple measured phenotypes for the same sequence.
 
-By training regression models on multiple viral phenotypes, we will gain the capacity to quantitatively map the risk profile of newly emerged viruses. As a long-term goal, I envision that these models, which are trained on mechanistically relevant data, can form the foundation of hierarchical models of pathogen biology and risk. 
+By training regression models on multiple viral phenotypes, I will gain the capacity to quantitatively map the risk profile of newly emerged viruses. As a long-term goal, I envision that these models, which are trained on mechanistically relevant data, can form the foundation of hierarchical models of pathogen biology and risk.
 
 Beyond the application to viral phenotype prediction, machine learning on graph-structured data is a very new field of research, with only a handful of pre-print manuscripts available this year (#cite arXiv papers). Because of the novelty of this field, we expect to make substantial contributions in the application of deep learning to graph-structured data in general.
 
@@ -70,11 +74,11 @@ Beyond the application to viral phenotype prediction, machine learning on graph-
 
 **Potential collaborations:** I anticipate continuing to collaborate with David Duvenaud as he begins his tenure as a new faculty member at the University of Toronto. Additionally, this project thrust will open up new computational avenues for Broadies to leverage, for example, by training supervised machine learning tasks on metabolic and genomic interaction networks.
 
-**Short-term milestones:** We will release the protein interaction network and graph fingerprinting software alongside manuscripts in open access publication avenues.
+**Short-term milestones:** I will release the protein interaction network and graph fingerprinting software alongside manuscripts in open access publication avenues.
 
 ## Forecasted Impact
 
-The data and models that we develop will be a rich resource for the influenza research community, and as a Broad Fellow, I would welcome data reuse and sharing. Beyond their usefulness for epidemiological purposes (i.e. identifying signatures of a “risky” virus), I envision the data becoming useful in a variety of other settings.
+The data and models that I develop will be a rich resource for the influenza research community, and as a Broad Fellow, I would welcome data reuse and sharing. Beyond their usefulness for epidemiological purposes (i.e. identifying signatures of a “risky” virus), I envision the data becoming useful in a variety of other settings.
 
 One example is in drug repurposing. With the proposed scalable assays developed, I foresee collaborating with other groups at the Broad who are interested in drug repurposing efforts. For example, with our proposed phenotype collection, we may be able to identify existing non-toxic molecules that target multiple components of flu simultaneously, reducing the likelihood of drug resistance by opening avenues for combination therapy.
 
@@ -82,14 +86,8 @@ Another example is in drug development. In order to pre-emptively identify viral
 
 The final example is in furthering our basic understanding of pathogen evolution. This is a low-hanging fruit which I hope to pursue as soon as we have the data available. By using our trained deep learning models, we may (re-)examine historical trends of neuraminidase drug resistance or polymerase activity over time. We may also combine our predictions with Bayesian phylogenetic modelling to better understand how public health interventions affect the evolutionary trajectory of viral pathogens w.r.t. their epidemiologically relevant phenotypes.
 
-Our ultimate goal is to make surveillance a holistic and rationally predictive endeavour. I believe that this work will positively impact pathogen genomic surveillance efforts by developing the necessary workflow, data and models for rational prediction of risk. I also foresee downstream research in drug development and pathogen surveillance through the public release of systematically measured pathogen phenotype data (i.e. “The Broad Phenotype Collection”). 
+Our ultimate goal is to make surveillance a holistic and rationally predictive endeavour. I believe that this work will positively impact pathogen genomic surveillance efforts by developing the necessary workflow, data and models for rational prediction of risk. I also foresee downstream research in drug development and pathogen surveillance through the public release of systematically measured pathogen phenotype data (i.e. “The Broad Phenotype Collection”).
 
 ## Planned Funding Avenues
 
 In order to sustain this work beyond the Broad Fellows period, I will solicit funding from a variety of government and philantrophic sources. Apart from the NIH R21 proposal that I am co-writing with my advisor Jon and collaborator David, I foresee this being of interest to the DARPA Prophecy program, NIAID, and companies interested in drug development. Finally, to acquire a continued revenue stream for the research and development work, our team will explore the use of funding models for application programming interfaces (APIs) that allow access to value-added data and models, which may be of interest to other academic and commercial entities (#cite: database funding models).
-
-
-
-
-
-
