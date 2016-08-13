@@ -26,11 +26,10 @@ Comments by Bill:
 
 ### Project Thrust 1: Develop epidemiologically relevant, scalable and rapid methods for experimentally phenotyping viruses.
 
-**Core problems:** The goals of real-time pathogen surveillance are to map evolutionary trajectory and deduce its risk profile of a virus from its sequence. Doing so can help rationally guide medical and epidemiological decision-making in the event of new outbreaks. The sequencing technologies necessary to power this are being developed (#cite: MinION papers). The crucial missing link here is phenotype data that are relevant to epidemiology, and rapidly and scalably measurable. In the first project thrust, I aim to work with my team to develop technologies to rapidly phenotype influenza viruses polymerase (replication rate), hemagglutinin (viral entry and immune evasion), and neuraminidase (viral release and drug resistance). The core data problems I aim to solve with my team are:
+**Core problems:** One goal of real-time pathogen surveillance is to deduce its risk profile of a virus from its sequence. Doing so can help rationally guide medical and epidemiological decision-making in the event of new outbreaks. The sequencing technologies necessary to power this are rapidly being developed and improved [@Gardy:2015fp; @Quick:2016kf; @Loman:2015dx]. The crucial missing link here high throughput, experimentally measured phenotype data that are relevant to epidemiology. In the first project thrust, I aim to work with my team to engineer the technologies to rapidly phenotype influenza viruses polymerase (replication rate), hemagglutinin (viral entry and immune evasion), and neuraminidase (viral release and drug resistance). The two core problems I aim to solve with my team are:
 
 1. The lack of systematically measured phenotype data paired with protein variant sequences.
-2. The lack of a catalogue of safe, scalable, and standardized phenotyping assays to rapidly phenotype these proteins.
-3. The lack of the concept of “signatures” of riskiness.
+1. The lack of a catalogue of safe, scalable, and standardized phenotyping assays to rapidly phenotype these proteins.
 
 Proteins are the arbiters of viral function. Hence, I believe that a pathogen’s measure of “riskiness” is composed of its proteins’ biochemical activities. In this paradigm, the rational approach requires making systematic and properly standardized measurements, on epidemiologically relevant biochemcial phenotypes, for libraries of protein variants.
 
