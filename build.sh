@@ -3,5 +3,5 @@ pandoc 01-research-statement.md \
   -V "geometry:left=0.5in, right=0.5in, bottom=1in, top=0.5in" \
   --latex-engine="/Library/TeX/texbin/xelatex" \
   --filter="/Users/ericmjl/anaconda/bin/pandoc-fignos" \
-  --filter="/usr/local/bin/pandoc-citeproc" \
-  --bibliography="../references-master/papers-library.bib"
+  # --filter="/usr/local/bin/pandoc-citeproc" \
+  # --bibliography="papers-library.bib"
