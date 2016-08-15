@@ -97,6 +97,6 @@ In order to sustain this work beyond the Broad Fellows period, I will solicit fu
 
 ## Figures
 
-![Importance of reticulate evolutionary events in switching between viral hosts.] (./figures/Proportion Reassortant COI.pdf){#fig:reticulate}
+![Importance of reticulate evolutionary events in switching between viral hosts.](./figures/Proportion Reassortant COI.pdf){#fig:reticulate}
 
 ## References
