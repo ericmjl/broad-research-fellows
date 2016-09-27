@@ -5,3 +5,5 @@ pandoc 01-research-statement.md \
   --filter="pandoc-fignos" \
   --filter="pandoc-citeproc" \
   --bibliography="papers-library.bib"
+
+open 01-research-statement.pdf
