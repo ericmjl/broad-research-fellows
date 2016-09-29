@@ -40,9 +40,9 @@ Amongst the cited studies above, it is evident that there are conflicting effect
 
 ***Proposed work:*** In the first project thrust, I will systematically measure influenza virus protein variants and their epidemiologically-relevant phenotypes. I will begin with the influenza neuraminidase, which has the signatures of low-hanging fruit:
 
-1. It is an epidemiologically-relevant phenotype
-1. It can be measured with an established biochemical assay (fluorescence)
-1. It is amenable to robotic liquid handling,
+1. It is an epidemiologically-relevant phenotype.
+1. It can be measured with an established biochemical assay (fluorescence).
+1. It is amenable to robotic liquid handling.
 1. It has yet to be systematically measured.
 
 In order to generate protein variant libraries, I will use a two-pronged approach. To learn from historical data, I will use DNA assembly and synthesis methods to create a rational library of existing neuraminidase variants in the Influenza Research Database. To pre-emptively explore genotypic space, I will generate random mutants from contemporary neuraminidase variants that have been sampled in the past year, and sequence the variants that exhibit large changes in neuraminidase resistance.
