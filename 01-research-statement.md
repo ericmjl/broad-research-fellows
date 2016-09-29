@@ -98,7 +98,7 @@ My ultimate goal is to make surveillance a holistic and rationally predictive en
 
 ## Planned Funding Avenues
 
-In order to sustain this work beyond the Broad Fellows period, I will solicit funding from a variety of government and philanthropic sources. Apart from the NIH R21 proposal that I am co-writing with my advisor Jon and collaborator David, I foresee this being of interest to the DARPA Prophecy program, NIAID, and companies interested in drug development. Finally, to acquire a continued revenue stream for the research and development work, I will explore the use of funding models through application programming interfaces (APIs) that allow access to value-added data and models, which may be of interest to other academic and commercial entities (#cite: database funding models).
+In order to sustain this work beyond the Broad Fellows period, I will solicit funding from a variety of government and philanthropic sources. Apart from the NIH R21 proposal that I am co-writing with my advisor Jon and collaborator David, I foresee this being of interest to the DARPA Prophecy program, NIAID, and companies interested in drug development. Finally, to acquire a continued revenue stream for the research and development work, I will explore the use of funding models through application programming interfaces (APIs) that allow access to value-added data and models, which may be of interest to other academic and commercial entities [@CheckHayden:2016ip; @CheckHayden:2013kb].
 
 ## Figures
 
