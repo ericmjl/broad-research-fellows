@@ -80,7 +80,7 @@ Following this, I will use data generated from Aim 1 as training data for the de
 
 ***Collaborations:*** I anticipate continuing to collaborate with David Duvenaud as he begins his tenure as a new faculty member at the University of Toronto. Additionally, I expect that this project thrust will open up new computational avenues for Broadies to leverage, for example, by training supervised machine learning tasks on metabolic and genomic interaction networks.
 
-***Short-term milestones:*** I will release the protein interaction network and graph fingerprinting software alongside manuscripts in open access publication avenues. All of the software will be freely available and archived in long-term repositories (e.g. Zenodo) in accordance with open science principles.
+***Short-term milestones:*** My team will release the protein interaction network and graph fingerprinting software alongside manuscripts in open access publication avenues. All of the software will be freely available and archived in long-term repositories (e.g. Zenodo) in accordance with open science principles.
 
 ## Forecasted Impact
 
