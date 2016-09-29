@@ -57,7 +57,7 @@ The data that my team will generate will have advantages that stand in contrast 
 
 ***Collaborations:*** I anticipate partnering and leveraging the Chemical Biology and Genomics Platforms to accelerate the experiments described above.
 
-***Short-term milestones:*** In the spirit and interest of open science, the protocols and data generated will be released freely through the Broad Institute, available for the research community through an in-house web-based interface. All publications will be deposited on pre-print servers and published in open-access venues.
+***Short-term milestones:*** In the spirit and interest of open science, the protocols and data generated will be released freely through the Broad Institute, available for the research community through a web-based interface. All publications will be deposited on pre-print servers and published in open-access venues.
 
 ### Project Thrust 2: Develop and deploy machine learning models that predict quantitative biochemical phenotype from sequence.
 
