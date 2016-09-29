@@ -5,6 +5,10 @@ affiliation: MIT
 csl: pnas.csl
 ---
 
+The full version-control history of this application can be found online [^broad].
+
+[^broad]: https://github.com/ericmjl/broad-research-fellows
+
 ## Research Statement
 
 **Long-term research goals:** My long-term research interests are to build the necessary experimental and computational infrastructure required to make real-time pathogen surveillance, prevention and treatment a *rationally predictive endeavour*. The core problems I have identified are: (a) the paucity of biochemical phenotype data that inform mechanistic knowledge of risk and pathogenesis, and (b) interpretable models to map from sequence data to quantitative measures of pathogen risk.
