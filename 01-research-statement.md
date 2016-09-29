@@ -84,7 +84,7 @@ Following this, I will use data generated from Aim 1 as training data for the de
 
 ## Forecasted Impact
 
-The data and models that I develop will be a rich resource for the influenza research community, and as a Broad Fellow, I would welcome data reuse and sharing. Beyond their usefulness for epidemiological purposes (i.e. identifying signatures of a “risky” virus), I envision the phenotyping platform and data becoming useful in a variety of other settings.
+The data and models that I foresee my team developing will be a rich resource for the influenza research community, and as a Broad Fellow, I would welcome data reuse and sharing. Beyond their usefulness for epidemiological purposes (i.e. identifying signatures of a “risky” virus), I envision the phenotyping platform and data becoming useful in a variety of other settings.
 
 One example is in drug repurposing. With the proposed scalable assays developed, I foresee collaborating with other groups at the Broad who are interested in drug repurposing efforts. For example, with our proposed phenotyping system, we may be able to identify existing non-toxic molecules that target multiple components of flu simultaneously, reducing the likelihood of viral drug resistance by opening avenues for combination therapy.
 
