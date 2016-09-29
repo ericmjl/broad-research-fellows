@@ -108,8 +108,6 @@ The full version-control history of this application can be found online [^broad
 
 [^broad]: https://github.com/ericmjl/broad-research-fellows
 
-
-
 ## Figures
 
 ![Importance of reticulate evolutionary events in switching between viral hosts. Viral hosts are considered "ecological niches" for the influenza virus. As the quantitative evolutionary distance between viral hosts increases, the greater the prominence of reticulate evolutionary events in these host switches. Figure from *Ma et. al.*, PNAS, 2016. ](./figures/reticulate.pdf){#fig:reticulate}
