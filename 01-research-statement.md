@@ -106,7 +106,7 @@ In order to sustain this work beyond the Broad Fellows period, I will solicit fu
 
 ![Genomic surveillance data can guide epidemiological interventions, but intermediate phenotypic data are required to bridge the gap (red arrows).](./figures/surveillance.png){#fig:surveillance}
 
-![Simulated high throughput assay measurement accuracy as a function of number of replicate measurements taken. Around 5-6 replicate measurements are needed to achieve 90% accuracy in readings, a significantly greater increase compared to baseline.](./figures/accuracy.pdf){#fig:accuracy}
+![Simulated high throughput assay measurement accuracy (fraction of true values in 95% highest posterior density) as a function of number of replicate measurements taken. Around 5-6 replicate measurements are needed to achieve 90% accuracy in readings, a significantly greater increase compared to the commonly-accepted baseline of 2 replicate measurements.](./figures/accuracy.pdf){#fig:accuracy}
 
 ![HIV-1 Predictions with Convolutional Neural Network. **a.** (left) Predicted drug resistance values vs. actual, using convolutional neural network. (right) Training error as a function of training number. **b.** (left) Network of hydrophobic HIV-1 protease residues most predictive of resistance to FPV, learned by the neural network. Dark blue: highly predictive; white: weakly predictive. (right) Homology model highlighting location of highly predictive residues and its neighbors.](./figures/most-activating.pdf){#fig:hiv}
 
