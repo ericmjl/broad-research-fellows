@@ -67,7 +67,7 @@ The data that my team will generate will have advantages that stand in contrast 
 
 Firstly, there is the trade-off between learning capacity (model complexity) and interpretability; the latter is the biggest limiting factor in deployability in clinical settings. For example, decision trees, which are highly interpretable, are prone to over-fitting and hence have limited generalizability. On the other hand, artificial neural networks (and deep nets) exhibit good generalizability, but are opaque to introspection, and hence suffer from a lack of interpretability.
 
-Secondly, current learning algorithms are unable to accept variable-length sequences as input, which poses a problem for fast-evolving viral proteins that can undergo insertions and deletions, apart from substitutions, as part of their evolutionary trajectory.
+Secondly, current learning algorithms are unable to accept variable-length sequences as input, which poses a problem for learning tasks on fast-evolving viral proteins that can undergo insertions and deletions, apart from substitutions, as part of their evolutionary trajectory.
 
 Finally, most current off-the-shelf algorithms (e.g. Random Forest) are unable to account for uncertainty associated with measurements, and hence are limited in their ability to produce uncertainty estimates for new predictions. Knowing this uncertainty can, for example, aid in deciding which sequences to triage for deeper phenotyping before making a intervention decisions.
 
