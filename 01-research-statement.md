@@ -113,7 +113,7 @@ In order to sustain this work beyond the Broad Fellows period, I will solicit fu
 
 ---
 
-The full version-control history of this application can be found online [^broad].
+The full version-control history of this research statement can be found online [^broad].
 
 [^broad]: https://github.com/ericmjl/broad-research-fellows
 
