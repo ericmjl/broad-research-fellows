@@ -93,7 +93,7 @@ Following this, I will use data generated from Aim 1 as training data for the de
 
 Viral infectious agents cause loss of life, productivity, and health, and as a research field, we are only recently building the capacity to monitor viral outbreaks in real-time. With the research program that I am proposing, I foresee multiple levels of impact, described below.
 
-***Societal Impact:*** My vision is to build a real-time dashboard that is capable of producing accurate and precise estimates of a virus' risk as soon as it is sequenced, and to have a phenotyping platform ready to be used for experimentally determining the phenotype of newly emerged viruses with large uncertainty in their predictions. These actionable data will enable epidemiologists and policy-makers to execute data-informed interventions.
+***Societal Impact:*** My vision is to build a real-time dashboard that is capable of producing accurate and precise estimates of a virus' risk as soon as it is sequenced, and to have a phenotyping platform ready to be used for experimentally determining the phenotype of newly emerged viruses (especially those which have large uncertainty in their predictions). These actionable data will enable epidemiologists and policy-makers to execute data-informed interventions.
 
 ***Industrial Impact:*** In order to pre-emptively identify viral proteins that exhibit resistance to newly developed drugs, we can create new synthetic protein variants using contemporary strains as the starting sequence. Medicinal chemists may be able to use the phenotyping platform to pre-emptively test new versions of their drugs and validate their effects against the phenotype catalogue.
 
