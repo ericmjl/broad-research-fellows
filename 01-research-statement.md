@@ -91,7 +91,7 @@ As groundwork for this, I have been collaborating with Prof. David Duvenaud (Uni
 [^deepnets]: https://github.com/ericmjl/protein-convolutional-nets/
 [^protein_nets]: https://github.com/ericmjl/protein-interaction-network/
 
-The current implementation currently produces point estimate predictions. I will use probabilistic programming to implement a Bayesian version of the algorithm, allowing us to propagate the uncertainty associated with systematic measurements (Aim 1) to uncertainty in predictions.
+As the current implementation currently produces point estimate predictions without quantifying uncertainty, I will use probabilistic programming to implement a Bayesian version of the algorithm. This will allow us to propagate the uncertainty associated with systematic measurements (Aim 1) to uncertainty in neuraminidase drug resistance predictions. This quantified uncertainty is also the precision in our prediction; knowing which genotypes have greater uncertainty can help with triaging genotypes for further phenotypic testing.
 
 Following this, I will use data generated from Aim 1 as training data for the deep learning models developed here in Aim 2, and use this to generate global and historical predictions of influenza drug resistance and replication rate potential. By training regression models on multiple viral phenotypes, we will gain the capacity to quantitatively map the risk profile of newly emerged viruses. As a long-term goal, I envision that these models, which are trained on data mechanistically relevant to influenza pathogenesis, can form the foundation of hierarchical models of pathogen biology and risk.
 
