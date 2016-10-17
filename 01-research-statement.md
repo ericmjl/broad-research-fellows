@@ -114,7 +114,7 @@ My long-term goal is to make surveillance a holistic and rationally predictive e
 
 ---
 
-The full version-control history of this research statement can be found online [^broad].
+The full version-controlled history of this research statement can be found online [^broad].
 
 [^broad]: https://github.com/ericmjl/broad-research-fellows
 
