@@ -108,6 +108,10 @@ Viral infectious agents cause loss of life, productivity, and health, and as a r
 
 In order to sustain this work beyond the Broad Fellows period, I will solicit funding from a variety of government and philanthropic sources. The Broad Next10 program is already supporting this work through two grants totalling $80,000. Apart from the NIH R21 proposal that I led with my advisor Jon and collaborator David, I foresee this being of interest to the DARPA Prophecy program, NIAID, and companies interested in drug development. Finally, to acquire a continued revenue stream for the research and development work, I will explore the use of funding models through application programming interfaces (APIs) that allow access to value-added data and models, which may be of interest to other academic and commercial entities [@CheckHayden:2016ip; @CheckHayden:2013kb].
 
+### Conclusion
+
+My long-term goal is to make surveillance a holistic and rationally predictive endeavour, and that necessitates open participation by and access for the surveillance community. My team will use a mix of high throughput experimentation with Bayesian deep learning to achieve this. We will publicly release this systematically measured pathogen phenotype data (i.e. "The Broad Viral Phenotype Collection"), with a view towards positively impacting pathogen genomic surveillance efforts and **setting the standard for rational phenotypic interpretation**.
+
 ---
 
 The full version-control history of this research statement can be found online [^broad].
