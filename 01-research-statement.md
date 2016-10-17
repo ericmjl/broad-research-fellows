@@ -94,7 +94,7 @@ Following this, I will use data generated from Aim 1 as training data for the de
 
 ### Forecasted Impact
 
-Viral infectious agents cause loss of life, productivity, and health, and as a research field, we are only recently building the capacity to monitor viral outbreaks in real-time. With the research program that I am proposing, I foresee multiple levels of impact, described below.
+Viral infectious agents cause loss of life, productivity, and health, and as a research field, we are only recently building the capacity to genetically monitor viral outbreaks in real-time. My projects are geared towards **making real-time phenotypic monitoring a reality**. With the research program that I am proposing, I foresee multiple levels of impact, described below.
 
 ***Societal Impact:*** My vision is to build a real-time dashboard for epidemiologists and policymakers. This dashboard will be powered by deep learning models, capable of producing accurate and precise estimates of a virus' risk as soon as it is sequenced. I also aim to develop the proposed phenotyping platform to be ready for experimentally determining the phenotype of newly emerged viruses (especially those which have large uncertainty in their predictions) in real-time. These actionable data will enable epidemiologists and policy-makers to execute data-informed interventions.
 
