@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Broad Fellows Research Statement</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="template/notes.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet”></link>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Broad Fellows Research Statement</h1>
+<h2 class="author">by Eric J. Ma (MIT)</h2>
+</div>
+<p><strong>RESEARCH BACKGROUND:</strong> My research background, which has included both experimental and computational components, has provided me with an excellent set of tools with which to tackle this problem. My experimental training was in synthetic biology, where I spearheaded the formation of the 2009 UBC iGEM team. We built an analog threshold sensor in <em>E. coli</em> (named the &quot;Traffic Light Sensor&quot;)<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, winning a Gold medal standing with the team in our first year of competing. My contributions included sourcing $6000 in student stipends, $500 in DNA synthesis sponsorship, and aiding in securing $10,000 from the UBC Teaching and Learning Enhancement Fund for the following competition year, and co-delivering our final presentation at the 2009 iGEM Jamboree. I also served as an advisor to the 2010 UBC and 2011 UCSF iGEM teams.</p>
+<p>I moved on to apply computational approaches to the study of influenza ecology and evolution under Prof. Jonathan A. Runstadler at MIT. My first area of focus has been on influenza disease ecology. Together with my colleagues in the Runstadler lab, we have investigated the role of reticulate evolutionary processes in influenza virus host switching and seasonal persistence <span class="citation">(1, 2)</span>, and I have won poster presentation awards (CEHS 2014, Broad Retreat 2015) based on this work. I developed a heuristic algorithm that enabled us to (1) identify reticulate evolutionary events at scale while accurately approximating phylogenetic relationships, and (2) quantitatively measure the importance of reticulate evolutionary processes in ecological niche switches (Figure <a href="#fig:reticulate">1</a>).</p>
+<p>The second (and more recent) focus is on the prediction of viral phenotype from genotype, otherwise known as <strong>phenotypic interpretation of genomic data</strong>. This is where my current efforts are focused, enabled through collaborations with Profs. David Duvenaud (U Toronto) and Paul Blainey (MIT/Broad Institute), and through the Broad <em>Next10</em> program. My colleagues and I have observed that single point mutations in a viral protein are sometimes necessary but not always sufficient for accurately predicting quantitative protein phenotypes. Additionally, epistatic interactions within a protein complicate the phenotypic interpretation of genomes, limiting the usefulness of identifying single point mutations. To solve this problem, we have identified the following needs:</p>
+<ol style="list-style-type: decimal">
+<li>Systematically measured paired genotype-phenotype data with modelled uncertainty in measurements.</li>
+<li>Machine learning algorithms capable of predicting quantitative phenotype from the 3D models of a protein with associated uncertainty.</li>
+</ol>
+<p>A key contribution that we expect to emerge from this work is a gold-standard template for predicting viral risk from sequence; <strong>this area of focus is the centrepiece of this Broad Fellows application</strong>.</p>
+<p>Apart from these two main areas of focus, I have also collaborated with colleagues in the use of Bayesian phylogenetic methods to study influenza movement and reassortment in wild animals <span class="citation">(3, 4)</span>, and performing statistical analysis methods of viral phenotype data <span class="citation">(5, 6)</span>.</p>
+<p><strong>BROAD FELLOWS VISION:</strong> As a Broad Fellow, I envision building the necessary experimental and computational systems for making phenotypic interpretation of viral genomic data a timely, rational and predictive endeavour (Figure <a href="#fig:surveillance">2</a>).</p>
+<p>A goal of viral genomic surveillance is to help guide appropriate interventions, given sequence data. Risk determination is a necessary step. Health risk is partially determined by a host's response to infection, and partially determined by a virus' biochemical phenotypes. Virus biochemistry is, in turn, determined by its proteins' sequence. While there are numerous studies describing the biochemical and physiological characterization of virus mutants, rational risk determination based on sequence remains elusive, and experiments with conflicting effects cannot be easily compared, because of non-standardized controls, protocols, and measurement metrics. As a field, genomic surveillance groups lack the capability to accurately predict phenotype from genotype <span class="citation">(7)</span>. <strong>At its essence, I see this phenotypic interpretation issue as essentially a machine learning problem that lacks data.</strong> To solve this problem, my goals are two-fold:</p>
+<ol style="list-style-type: decimal">
+<li>To be able to rapidly phenotype a virus while minimizing experimentation on its live form, and</li>
+<li>Develop interpretable machine learning algorithms that predict phenotype from protein structure.</li>
+</ol>
+<p>With my team, I envision building a real-time phenotype interpretation and risk determination dashboard for viral genomes, backed by experimental data, powered by deep learning, yet user-friendly for use by epidemiologists, physicians and policy-makers alike. In pursuit of these goals, I plan to develop 2 main project thrusts, which I will elaborate on below.</p>
+<h3 id="project-thrust-1-develop-scalable-safe-and-standardized-assays-for-phenotyping-viruses.">Project Thrust 1: Develop scalable, safe and standardized assays for phenotyping viruses.</h3>
+<p><strong><em>Core problems:</em></strong> I believe that the next frontier in real-time pathogen surveillance is to deduce the risk profile of a virus from its sequence. Doing so can help rationally guide medical and epidemiological decision-making in the event of new outbreaks. It is possible now to sequence a new pathogen within 24 hours of isolation <span class="citation">(8)</span>, and the technology enabling this is being rapidly improved <span class="citation">(8–12)</span>. Yet, studies that use sequence data tend to be limited to mapping the transmission and evolutionary dynamics of the virus <span class="citation">(13–15)</span>, and shy away from making phenotypic predictions <span class="citation">(7)</span>. The state-of-the-art in phenotypic interpretation remains limited to the identification of single amino acid substitutions that are experimentally correlated with (on an ad-hoc basis) some &quot;risky&quot; phenotype (e.g. influenza polymerase replication rate <span class="citation">(6, 16–18)</span> and neuraminidase drug resistance <span class="citation">(19)</span>).</p>
+<p>Phenotypic interpretation tends to be limited to the identification of &quot;famous mutations&quot;. For example, E627K in the influenza PB2 protein has been described as being an attenuator <span class="citation">(17)</span> and activator <span class="citation">(6)</span> of replication and pathogenicity, depending on the background genotype and experiment. Moreover, the absence of E627K can be compensated by mutations at other amino acid positions <span class="citation">(16)</span>. This example indicates that point mutations are neither necessary nor sufficient for causing a &quot;risky&quot; phenotype; we need a broader view of the data that takes into account all known epistatic interactions, and systematic and standardized phenotype measurements, matched to all known viral protein genotypes, will enable us to get there.</p>
+<p><strong><em>Proposed work:</em></strong> In the first project thrust, my team will systematically measure influenza virus protein variants and their epidemiologically-relevant phenotypes. We will begin with the influenza neuraminidase, which has the signatures of low-hanging fruit:</p>
+<ol style="list-style-type: decimal">
+<li>It has an epidemiologically-relevant phenotype (drug resistance).</li>
+<li>The phenotype can be measured with an established biochemical assay <span class="citation">(20)</span>.</li>
+<li>The assay is simple enough to be amenable to robotic liquid handling.</li>
+<li>The phenotype has yet to be systematically measured.</li>
+</ol>
+<p>In order to generate protein variant libraries, we will use a two-pronged approach. To learn from historical data, we will use DNA assembly and synthesis methods to create a rational library of existing neuraminidase variants in the Influenza Research Database. To pre-emptively explore genotypic space, we will generate random mutants from contemporary neuraminidase variants that have been sampled in the past year, and sequence the variants that exhibit large changes in neuraminidase resistance.</p>
+<p>We will also characterize the influenza polymerase RNA replication rate using a luciferase-based assay. The polymerase replication rate is directly related to viral load, and has been implicated in pathogenic phenotypes; it also fulfills the same four criteria outlined for neuraminidase drug resistance. With colleagues in the Blainey lab, we are also currently exploring alternative assays for polymerase replication that can be conducted at a fraction of the cost, funded by the Broad <em>Next10</em>.</p>
+<p>As a &quot;stretch goal&quot; within the Broad Fellows timeframe, with my team I will explore the feasibility of leveraging the influenza virus' genetic systems to develop mammalian systems for continuous evolution, inspired by PACE <span class="citation">(21)</span>. This may allow us to pre-emptively explore the influenza genotype space faster than manual random mutagenesis, and may also be leveraged as a tool for evolution of proteins that require mammalian cellular modifications to be functional.</p>
+<p>One fundamental problem any research group dealing with high throughput measurement will face is determining the number of replicate measurements that are required. In preliminary work supported through the Broad <em>Next10</em>, I have developed a simple Bayesian statistical framework<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> for analyzing high throughput data, and used it with statistical simulations to empirically determine that 5-6 replicate measurements are necessary for balancing cost with accurate phenotyping (Figure <a href="#fig:accuracy">3</a>). This work, in which a draft version is available as a pre-print on BioRxiv <span class="citation">(22)</span>, has informed the design of existing assays in our group. We will use this framework with the experimentally measured neuraminidase resistance data to model the uncertainty associated with the measurements, transparently report them as the posterior distribution of credible neuraminidase values given the measurement data, and leverage them in the machine learning models developed in Aim 2.</p>
+<p>Concurrent with ongoing systematic testing of the influenza polymerase, I will explore developing high throughput versions of assays to test other viruses. (Whether we are able to modify existing genetic systems or require completely novel ones will require experimentation.) In doing so, I aim to develop a modular, plug-and-play phenotyping system for rapidly phenotyping emerging viral outbreaks as they occur. In the long run, the goal is to develop a toolkit of standardized and scaled phenotyping assays for multiple phenotypes across multiple viruses.</p>
+<p>The data that my team will generate will have advantages that stand in contrast to the current available data. Firstly, it will be data relevant to understanding the <strong>mechanistic</strong> underpinnings of influenza risk and pathogenesis. This stands in contrast to more easily collectable proxies, such as the number of influenza-like illnesses (ILI) per year and viral load in patient cohorts, both of which are far removed from pathogenesis mechanisms. Understanding the biochemical underpinnings of pathogenesis also opens opportunities for the development of drug treatments. Secondly, the data will be <strong>standardized</strong>, allowing for easier inter-comparison between genotypes. This stands in contrast to the currently available phenotyping data, which are measured ad-hoc and difficult to compare because of the use of non-standard baseline controls. Finally, unlike current gold standard datasets (e.g. the HIV drug resistance database, which reports single values per genotype), by explicitly reporting uncertainty we will improve scientific <strong>transparency</strong>, and including them in machine learning applications will allow for propagation of uncertainty to final predictions.</p>
+<p><strong><em>Collaborations:</em></strong> I anticipate partnering with the Chemical Biology and Genomics Platforms to accelerate the experiments described above. Additionally, I will continue to collaborate with colleagues in the Blainey lab, and explore collaborations with groups affiliated with the Infectious Disease and Microbiome Program, such as the Sabeti lab.</p>
+<p><strong><em>Short-term milestones:</em></strong> In the spirit and interest of open science, the protocols and data generated will be released freely through a web interface hosted on the Broad Institute, available for the research community through a web-based interface, and publicized via open access publications (e.g. in Scientific Data, a Nature Publishing Group journal). All derivative publications will be deposited on pre-print servers (BioRxiv) and published in open-access venues.</p>
+<h3 id="project-thrust-2-develop-and-deploy-machine-learning-models-that-predict-quantitative-biochemical-phenotype-from-structure.">Project Thrust 2: Develop and deploy machine learning models that predict quantitative biochemical phenotype from structure.</h3>
+<p><strong><em>Core problems:</em></strong> Given the complex amino-acid interactions that give rise to a protein's biochemistry, I believe that machine learning is the key to interpretably map genotype to phenotype. While machine learning algorithms have been used to predict protein properties from sequence <span class="citation">(23–28)</span>, as of now, current algorithms are:</p>
+<ol style="list-style-type: decimal">
+<li>Unable to accept variable length sequences as inputs</li>
+<li>Require the inference of epistasis rather than explicitly accepting it as part of the input, and</li>
+<li>Lack the capability to produce uncertainty estimates for new predictions.</li>
+</ol>
+<p>These hinder progress towards a rational evaluation of a virus' risk for the following reasons.</p>
+<p>Variable length inputs are a problem because virus proteins can undergo insertions and deletions as part of their evolutionary trajectory. Yet, machine learning algorithms require fixed-length vectors as inputs. Interpolation is a proposed solution <span class="citation">(29)</span>, but it distorts the original protein information; multiple sequence alignments do not fundamentally solve this problem either, as a new alignment needs to be produced when a new protein sequence of a new length arises. Circumventing these problems will allow us build streamlined pipelines for general purpose machine learning on proteins.</p>
+<p>Additionally, proteins fold into complex, 3-dimensional structures, dictated by amino acid interactions. Machine learning with linear protein sequences necessarily requires that the interactions be inferred. Yet, where the crystal structure of a protein already exists, and homology models can be constructed, inferring interactions is unnecessary and may even be inaccurate. Designing a machine learning algorithm that <strong>explicitly learns from the 3D protein structure</strong> will allow us to interpretably infer the biochemical interactions responsible for phenotypes, and move beyond single point mutations to biochemical characteristics underpinning phenotypic changes (e.g. &quot;flipping from a positively to negatively charged patch&quot;).</p>
+<p>Finally, current algorithms have no notion of uncertainty in the predictions, producing only point estimates. This can pose a problem for decision-makers. Suppose for a circulating virus population predicted drug resistance lay below some threshold, permitting the deployment of drug for treatment, but the uncertainty was large enough that it could have well been, in reality, a resistant virus. In this case, if we knew that the uncertainty was large, we would likely have triaged the virus for deeper experimental phenotyping to confirm its phenotype, rather than risk the further spread of a drug resistant virus.</p>
+<p><strong><em>Proposed work:</em></strong> As a Broad Fellow, I will leverage my mastery of probabilistic programming to develop, with collaborators, a Bayesian deep learning algorithm for use with our influenza phenotyping data. This deep learning algorithm will accept variable-length inputs, and produce uncertainty estimates in predicted values, thereby allowing us to rationally monitor an outbreak in real-time, thereby solving the problems outlined above.</p>
+<p>As groundwork for this, I have been collaborating with Prof. David Duvenaud (Univ. Toronto). He has developed a convolutional neural network for learning properties of small molecules, such as solubility and cellular toxicity. I have extended this to <strong>protein structures</strong>, and have been developing software packages to accomplish this. In a proof-of-principle, I have successfully trained an alpha version of this neural network on HIV-1 protease drug resistance to fosamprenavir (FPV), and used it to identify known amino acids clusters that are positively or negatively associated with FPV resistance (Figure <a href="#fig:hiv">4</a>).</p>
+<p>As the current implementation produces point estimate predictions without quantifying uncertainty, I will use probabilistic programming to implement a Bayesian version of the algorithm. This will allow us to propagate the uncertainty associated with systematic measurements (from Aim 1) to uncertainty in neuraminidase drug resistance predictions. This quantified uncertainty is also the precision in our prediction; knowing which genotypes have greater uncertainty can help with triaging genotypes for further phenotypic testing.</p>
+<p>Following this, I will use data generated from Aim 1 as training data for the deep learning models developed here in Aim 2, and use this to generate global and historical predictions of influenza drug resistance. Once paired with multiple other phenotypes, we will gain the capacity to quantitatively map the risk profile of newly emerged viruses.</p>
+<p><strong><em>Collaborations:</em></strong> I will continue to collaborate with David as he continues his tenure as a new faculty member at the University of Toronto. Additionally, I expect that this project thrust will open up new computational avenues for Broadies to leverage, either in the form of workshops on machine learning or through research collaborations.</p>
+<p><strong><em>Short-term milestones:</em></strong> My team will release the protein interaction network<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> and graph fingerprinting<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> software alongside manuscripts in open access publication avenues. All of the software will be freely available and archived in long-term repositories (e.g. Zenodo) in accordance with open science principles.</p>
+<p><strong>FORECASTED IMPACT:</strong> Viral infectious agents cause loss of life, productivity, and health, and as a research field, we are only recently building the capacity to genetically monitor viral outbreaks in real-time. My projects are geared towards <strong>making real-time phenotypic monitoring a reality</strong>. With the research program that I am proposing, I foresee multiple levels of impact, described below.</p>
+<p><strong><em>Societal Impact:</em></strong> My vision is to build a real-time dashboard for epidemiologists and policymakers. This dashboard will be powered by deep learning models, capable of producing accurate and precise estimates of a virus' risk as soon as it is sequenced. I also aim to develop the proposed phenotyping platform to be ready for experimentally determining the phenotype of newly emerged viruses (especially those which have large uncertainty in their predictions) in real-time. These actionable data will enable epidemiologists and policy-makers to execute data-informed interventions.</p>
+<p><strong><em>Industrial Impact:</em></strong> In order to pre-emptively identify viral proteins that exhibit resistance to newly developed drugs, we can create new synthetic protein variants using contemporary strains as the starting sequence. Medicinal chemists may be able to leverage the phenotyping platform to pre-emptively test new versions of their drugs and validate their effects.</p>
+<p><strong><em>Scientific Impact:</em></strong> By using predictions from our trained deep learning models, we may re-examine historical trends of neuraminidase drug resistance over time, possibly providing greater resolution when compared against the use of H275Y and I223V molecular markers of resistance. We may also combine our predictions with Bayesian phylogenetic modelling to better understand how public health interventions affect the phenotypic evolution of viral pathogens. This will further our basic understanding of pathogen evolution. This is a low-hanging fruit which I hope to pursue as soon as we have the data available.</p>
+<p><strong><em>Broad Community Impact:</em></strong> With the proposed scalable assays developed, I foresee collaborating with other groups at the Broad who are interested in drug repurposing efforts. For example, with our proposed phenotyping system, we may be able to identify combinations of existing non-toxic molecules that target multiple components of flu simultaneously, reducing the likelihood of viral drug resistance. Moreover, our algorithm efforts and data sharing practices may open avenues for collaboration with the Data Science and Data Engineering Initiative at the Broad.</p>
+<p><strong>PLANNED FUNDING AVENUES:</strong> In order to sustain this work beyond the Broad Fellows period, I will solicit funding from a variety of government and philanthropic sources. The Broad Next10 program is already supporting this work through two grants totalling $80,000. Apart from the NIH R21 proposal that I wrote with my advisor Jon and collaborator David, I foresee this being of interest to the DARPA Prophecy program, the Gates foundation, NIAID, and companies interested in drug development. To acquire a continued revenue stream for the research and development work, I will explore the use of funding models through application programming interfaces (APIs) that allow access to value-added data and models, which may be of interest to other academic and commercial entities <span class="citation">(30, 31)</span>.</p>
+<p><strong>CONCLUSION:</strong> My long-term goal is to make surveillance a holistic and rationally predictive endeavour, and that necessitates open participation by and access for the surveillance community. My team will use a mix of high throughput experimentation with Bayesian deep learning to achieve this. We will publicly release this systematically measured pathogen phenotype data (i.e. &quot;The Broad Viral Phenotype Collection&quot;), with a view towards positively impacting pathogen genomic surveillance efforts and <strong>setting the standard for rational phenotypic interpretation</strong>.</p>
+<hr />
+<p>The full version-controlled history of this research statement can be found online.<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a></p>
+<!-- Figures -->
+<div class="figure">
+<embed src="./figures/reticulate.pdf" id="fig:reticulate" class="class" width="800" height="400" />
+<p class="caption">Figure 1: Importance of reticulate evolutionary events in switching between viral hosts. Viral hosts are considered &quot;ecological niches&quot; for the influenza virus. As the quantitative evolutionary distance between viral hosts increases (x-axis: host COI (cytochrome oxidase I) distance), the greater the prominence of reticulate evolutionary events in these host switches (y-axis: proportion of reassortment events amongst all transfers between viral hosts). Figure from Ma et. al., PNAS (2016).</p>
+</div>
+<div class="figure">
+<embed src="./figures/summary-figure.pdf" id="fig:surveillance" class="class" width="800" height="400" />
+<p class="caption">Figure 2: Genomic surveillance data can guide epidemiological interventions, but intermediate phenotypic data are required to bridge the crucial gap mapping genotype to biochemical phenotype. To highlight an example, the influenza nueraminidase (NA) is targeted by oseltamivir (Tamiflu) and zanamivir, and can develop drug resistance, thereby decreasing the effectiveness of the drug and increasing the capacity of the virus to replicate in the presence of drug treatment. Machine learning models can be trained to accurately learn the complex mapping from genotype to phenotype, with quantified precision. Having accurate and precise predictions can impact policy decisions, such as whether to deploy stockpiles of drugs or to shift focus to other interventions.</p>
+</div>
+<div class="figure">
+<embed src="./figures/accuracy.pdf" id="fig:accuracy" class="class" width="800" height="400" />
+<p class="caption">Figure 3: Simulated high throughput assay measurement accuracy (fraction of true values in 95% highest posterior density) as a function of number of replicate measurements taken. Around 5-6 replicate measurements are needed to achieve a median of 90% accuracy in readings, which would be a significantly greater increase compared to the commonly-accepted baseline of 2 replicate measurements. Figure is taken from Ma et. al., BioRxiv (2016).</p>
+</div>
+<div class="figure">
+<embed src="./figures/most-activating.pdf" id="fig:hiv" class="class" width="800" height="600" />
+<p class="caption">Figure 4: Deep convolutional neural network learns hydrophobic patches predictive of HIV-1 drug resistance to FPV. <strong>a.</strong> (left) Predicted drug resistance values vs. actual, using convolutional neural network. (right) Training error as a function of training number. <strong>b.</strong> (left) Network of hydrophobic HIV-1 protease residues most predictive of resistance to FPV, learned by the neural network. Dark blue: highly predictive; white: weakly predictive. (right) Homology model highlighting location of highly predictive residues and its neighbors. Figure from poster on figshare: https://dx.doi.org/10.6084/m9.figshare.4028376.v1</p>
+</div>
+<h2 id="references" class="unnumbered">References</h2>
+<div id="refs" class="references">
+<div id="ref-Ma:2016ht">
+<p>1. Ma EJ, Hill NJ, Zabilansky J, Yuan K, Runstadler JA (2016) Reticulate evolution is favored in influenza niche switching. <em>Proceedings of the National Academy of Sciences of the United States of America</em> 113(19):201522921–5339.</p>
+</div>
+<div id="ref-Hill:2016dh">
+<p>2. Hill NJ, et al. (2016) Transmission of influenza reflects seasonality of wild birds across the annual cycle. <em>Ecology letters</em> 19(8):915–925.</p>
+</div>
+<div id="ref-Bahl:2016efa">
+<p>3. Bahl J, et al. (2016) Ecosystem Interactions Underlie the Spread of Avian Influenza A Viruses with Pandemic Potential. <em>PLoS Pathogens</em> 12(5):e1005620.</p>
+</div>
+<div id="ref-Bui:2015bja">
+<p>4. Bui VN, et al. (2015) Genetic characterization of a rare H12N3 avian influenza virus isolated from a green-winged teal in Japan. <em>Virus genes</em> 50(2):1–5.</p>
+</div>
+<div id="ref-Hussein:2016cj">
+<p>5. Hussein ITM, et al. (2016) New England harbor seal H3N8 influenza virus retains avian-like receptor specificity. <em>Scientific Reports</em> 6:21428.</p>
+</div>
+<div id="ref-Hussein:2016dc">
+<p>6. Hussein ITM, et al. (2016) A point mutation in the polymerase protein PB2 allows a reassortant H9N2 influenza isolate of wild-bird origin to replicate in human cells. <em>Infection, Genetics and Evolution</em> 41:279–288.</p>
+</div>
+<div id="ref-Holmes:2016hc">
+<p>7. Holmes EC, Dudas G, Rambaut A, Andersen KG (2016) The evolution of Ebola virus: Insights from the 20132016 epidemic. <em>Nature</em> 538(7624):193–200.</p>
+</div>
+<div id="ref-Quick:2016kf">
+<p>8. Quick J, et al. (2016) Real-time, portable genome sequencing for Ebola surveillance. <em>Nature</em> 530(7589):228–232.</p>
+</div>
+<div id="ref-Loman:2015dx">
+<p>9. Loman NJ, Watson M (2015) Successful test launch for nanopore sequencing. <em>Nature methods</em> 12(4):303–304.</p>
+</div>
+<div id="ref-Jain:2015ij">
+<p>10. Jain M, et al. (2015) Improved data analysis for the MinION nanopore sequencer. <em>Nature methods</em> 12(4):351–U115.</p>
+</div>
+<div id="ref-Sovic:2016bn">
+<p>11. Sovic I, et al. (2016) Fast and sensitive mapping of nanopore sequencing reads with GraphMap. <em>Nature communications</em> 7:11307.</p>
+</div>
+<div id="ref-Quick:2015ko">
+<p>12. Quick J, et al. (2015) Rapid draft sequencing and real-time nanopore sequencing in a hospital outbreak of Salmonella. <em>Genome Biology</em> 16(1).</p>
+</div>
+<div id="ref-Park:2015cw">
+<p>13. Park DJ, et al. (2015) Ebola Virus Epidemiology, Transmission, and Evolution during Seven Months in Sierra Leone. <em>Cell</em> 161(7):1516–1526.</p>
+</div>
+<div id="ref-Dudas:2015ela">
+<p>14. Dudas G, Bedford T, Lycett S, Rambaut A (2015) Reassortment between influenza B lineages and the emergence of a coadapted PB1-PB2-HA gene complex. <em>Molecular biology and evolution</em> 32(1):162–172.</p>
+</div>
+<div id="ref-Gire:2014fk">
+<p>15. Gire SK, et al. (2014) Genomic surveillance elucidates Ebola virus origin and transmission during the 2014 outbreak. <em>Science (New York, NY)</em> 345(6202):1369–1372.</p>
+</div>
+<div id="ref-Song:2014bu">
+<p>16. Song W, et al. (2014) The K526R substitution in viral protein PB2 enhances the effects of E627K on influenza virus replication. <em>Nature communications</em> 5:5509.</p>
+</div>
+<div id="ref-Jagger:2010cj">
+<p>17. Jagger BW, et al. (2010) The PB2-E627K Mutation Attenuates Viruses Containing the 2009 H1N1 Influenza Pandemic Polymerase. <em>mBio</em> 1(1):e00067–10–e00067–10.</p>
+</div>
+<div id="ref-Li:2009fk">
+<p>18. Li J, et al. (2009) Single mutation at the amino acid position 627 of PB2 that leads to increased virulence of an H5N1 avian influenza virus during adaptation in mice can be compensated by multiple mutations at other sites of PB2. <em>Virus research</em> 144(1-2):123–129.</p>
+</div>
+<div id="ref-Paradis:2015bh">
+<p>19. Paradis EG, et al. (2015) Impact of the H275Y and I223V Mutations in the Neuraminidase of the 2009 Pandemic Influenza Virus In Vitro and Evaluating Experimental Reproducibility. <em>PloS one</em> 10(5):e0126115.</p>
+</div>
+<div id="ref-Mungall:2003kr">
+<p>20. Mungall BA, Xu X, Klimov A (2003) Assaying susceptibility of avian and other influenza A viruses to zanamivir: comparison of fluorescent and chemiluminescent neuraminidase assays. <em>Avian diseases</em> 47(3 Suppl):1141–1144.</p>
+</div>
+<div id="ref-Esvelt:2011cv">
+<p>21. Esvelt KM, Carlson JC, Liu DR (2011) A system for the continuous directed evolution of biomolecules. <em>Nature</em> 472(7344):499–503.</p>
+</div>
+<div id="ref-Ma:2016fl">
+<p>22. Ma E, Hussein ITM, Zhong V, Bandoro C, Runstadler J (2016) Bayesian Analysis of High Throughput Data. <em>bioRxiv</em>:079525.</p>
+</div>
+<div id="ref-Wang:2003cg">
+<p>23. Wang D, Larder B (2003) Enhanced prediction of lopinavir resistance from genotype by use of artificial neural networks. <em>The Journal of infectious diseases</em> 188(5):653–660.</p>
+</div>
+<div id="ref-Kjaer:2008kc">
+<p>24. Kjaer J, Høj L, Fox Z, Lundgren JD (2008) Prediction of phenotypic susceptibility to antiretroviral drugs using physiochemical properties of the primary enzymatic structure combined with artificial neural networks. <em>HIV medicine</em> 9(8):642–652.</p>
+</div>
+<div id="ref-Walsh:2015cc">
+<p>25. Walsh I, Pollastri G, Tosatto SCE (2015) Correct machine learning on protein sequences: a peer-reviewing perspective. <em>Briefings in Bioinformatics</em>:bbv082.</p>
+</div>
+<div id="ref-Prosperi:2009ua">
+<p>26. Prosperi MCF, et al. (2009) Investigation of expert rule bases, logistic regression, and non-linear machine learning techniques for predicting response to antiretroviral treatment. <em>Antiviral therapy</em> 14(3):433–442.</p>
+</div>
+<div id="ref-Hepler:2014fy">
+<p>27. Hepler NL, et al. (2014) IDEPI: Rapid Prediction of HIV-1 Antibody Epitopes and Other Phenotypic Features from Sequence Data Using a Flexible Machine Learning Platform. <em>PLoS Computational Biology</em> 10(9):e1003842.</p>
+</div>
+<div id="ref-Attaluri:2012uea">
+<p>28. Attaluri PK (2012) <em>Classifying influenza subtypes and hosts using machine learning techniques.</em> (ProQuest / UMI).</p>
+</div>
+<div id="ref-Heider:2011bf">
+<p>29. Heider D, Verheyen J, Hoffmann D (2011) Machine learning on normalized protein sequences. <em>BMC research notes</em> 4(1):94.</p>
+</div>
+<div id="ref-CheckHayden:2016ip">
+<p>30. Check Hayden E (2016) Funding for model-organism databases in trouble. <em>Nature</em>.</p>
+</div>
+<div id="ref-CheckHayden:2013kb">
+<p>31. Check Hayden E (2013) Popular plant database set to charge users. <em>Nature</em>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>http://2009.igem.org/Team:British_Columbia<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>https://github.com/ericmjl/bayesian-measurement-paper<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>https://github.com/ericmjl/protein-interaction-network/<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>https://github.com/ericmjl/protein-convolutional-nets/<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>https://github.com/ericmjl/broad-research-fellows<a href="#fnref5">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>

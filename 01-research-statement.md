@@ -1,10 +1,12 @@
 ---
-affiliation: MIT
+title: Broad Fellows Research Statement
+author:
+- name: Eric J. Ma
+  affiliation: MIT
 csl: pnas.csl
 header-includes:
 - \usepackage[nomarkers]{endfloat}
 ---
-# Broad Fellows Research Statement: Eric J. Ma
 
 **RESEARCH BACKGROUND:** My research background, which has included both experimental and computational components, has provided me with an excellent set of tools with which to tackle this problem. My experimental training was in synthetic biology, where I spearheaded the formation of the 2009 UBC iGEM team. We built an analog threshold sensor in *E. coli* (named the "Traffic Light Sensor")[^traffic], winning a Gold medal standing with the team in our first year of competing. My contributions included sourcing $6000 in student stipends, $500 in DNA synthesis sponsorship, and aiding in securing $10,000 from the UBC Teaching and Learning Enhancement Fund for the following competition year, and co-delivering our final presentation at the 2009 iGEM Jamboree. I also served as an advisor to the 2010 UBC and 2011 UCSF iGEM teams.
 
@@ -114,12 +116,12 @@ The full version-controlled history of this research statement can be found onli
 
 <!-- Figures -->
 
-![Importance of reticulate evolutionary events in switching between viral hosts. Viral hosts are considered "ecological niches" for the influenza virus. As the quantitative evolutionary distance between viral hosts increases (x-axis: host COI (cytochrome oxidase I) distance), the greater the prominence of reticulate evolutionary events in these host switches (y-axis: proportion of reassortment events amongst all transfers between viral hosts). Figure from Ma et. al., PNAS (2016). ](./figures/reticulate.pdf){#fig:reticulate}
+![Importance of reticulate evolutionary events in switching between viral hosts. Viral hosts are considered "ecological niches" for the influenza virus. As the quantitative evolutionary distance between viral hosts increases (x-axis: host COI (cytochrome oxidase I) distance), the greater the prominence of reticulate evolutionary events in these host switches (y-axis: proportion of reassortment events amongst all transfers between viral hosts). Figure from Ma et. al., PNAS (2016). ](./figures/reticulate.pdf){#fig:reticulate .class width=800px height=400px}
 
-![Genomic surveillance data can guide epidemiological interventions, but intermediate phenotypic data are required to bridge the crucial gap mapping genotype to biochemical phenotype. To highlight an example, the influenza nueraminidase (NA) is targeted by oseltamivir (Tamiflu) and zanamivir, and can develop drug resistance, thereby decreasing the effectiveness of the drug and increasing the capacity of the virus to replicate in the presence of drug treatment. Machine learning models can be trained to accurately learn the complex mapping from genotype to phenotype, with quantified precision. Having accurate and precise predictions can impact policy decisions, such as whether to deploy stockpiles of drugs or to shift focus to other interventions. ](./figures/summary-figure.pdf){#fig:surveillance}
+![Genomic surveillance data can guide epidemiological interventions, but intermediate phenotypic data are required to bridge the crucial gap mapping genotype to biochemical phenotype. To highlight an example, the influenza nueraminidase (NA) is targeted by oseltamivir (Tamiflu) and zanamivir, and can develop drug resistance, thereby decreasing the effectiveness of the drug and increasing the capacity of the virus to replicate in the presence of drug treatment. Machine learning models can be trained to accurately learn the complex mapping from genotype to phenotype, with quantified precision. Having accurate and precise predictions can impact policy decisions, such as whether to deploy stockpiles of drugs or to shift focus to other interventions. ](./figures/summary-figure.pdf){#fig:surveillance .class width=800px height=400px}
 
-![Simulated high throughput assay measurement accuracy (fraction of true values in 95% highest posterior density) as a function of number of replicate measurements taken. Around 5-6 replicate measurements are needed to achieve a median of 90% accuracy in readings, which would be a significantly greater increase compared to the commonly-accepted baseline of 2 replicate measurements. Figure is taken from Ma et. al., BioRxiv (2016).](./figures/accuracy.pdf){#fig:accuracy}
+![Simulated high throughput assay measurement accuracy (fraction of true values in 95% highest posterior density) as a function of number of replicate measurements taken. Around 5-6 replicate measurements are needed to achieve a median of 90% accuracy in readings, which would be a significantly greater increase compared to the commonly-accepted baseline of 2 replicate measurements. Figure is taken from Ma et. al., BioRxiv (2016).](./figures/accuracy.pdf){#fig:accuracy .class width=800px height=400px}
 
-![Deep convolutional neural network learns hydrophobic patches predictive of HIV-1 drug resistance to FPV. **a.** (left) Predicted drug resistance values vs. actual, using convolutional neural network. (right) Training error as a function of training number. **b.** (left) Network of hydrophobic HIV-1 protease residues most predictive of resistance to FPV, learned by the neural network. Dark blue: highly predictive; white: weakly predictive. (right) Homology model highlighting location of highly predictive residues and its neighbors. Figure from poster on figshare: https://dx.doi.org/10.6084/m9.figshare.4028376.v1 ](./figures/most-activating.pdf){#fig:hiv}
+![Deep convolutional neural network learns hydrophobic patches predictive of HIV-1 drug resistance to FPV. **a.** (left) Predicted drug resistance values vs. actual, using convolutional neural network. (right) Training error as a function of training number. **b.** (left) Network of hydrophobic HIV-1 protease residues most predictive of resistance to FPV, learned by the neural network. Dark blue: highly predictive; white: weakly predictive. (right) Homology model highlighting location of highly predictive residues and its neighbors. Figure from poster on figshare: https://dx.doi.org/10.6084/m9.figshare.4028376.v1 ](./figures/most-activating.pdf){#fig:hiv .class width=800px height=600px}
 
 ## References
