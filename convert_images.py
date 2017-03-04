@@ -7,4 +7,4 @@ for f in ls('.'):
     print(f.split('.'))
     if f.split('.')[-1] == 'pdf':
         handle = f.split('.')[0]
-        os.system('convert -density 300 {f} {handle}.png'.format(f=f, handle=handle))
+        os.system('convert -density 300 {f} {handle}.jpg'.format(f=f, handle=handle))
